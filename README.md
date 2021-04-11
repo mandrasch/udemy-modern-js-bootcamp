@@ -6,7 +6,7 @@ Personal learning notes, I want to update my basic js knowledge :)
 
 ## Pomodoros
 
-11.04.2021 🍅 
+11.04.2021 🍅 🍅 🍅
 
 ## Notes
 
@@ -24,7 +24,8 @@ console.log(a);
 - Javascript Standards
     - ES5 (ECMAScript 5 - JSON, Objects) 2009
     - ES6 (ECMAScript 6 - let, etc.) 2016 => better debugging
-- Javascript uses Eventloop, no sleep() calls possible, TODO: watch https://www.youtube.com/watch?v=8aGhZQkoFbQ
+- Javascript uses Eventloop, no sleep() calls possible as in other languages
+    - "Was zum Henker ist überhaupt die Ereignisschleife? | Philip Roberts | JSConf EU" (English) https://www.youtube.com/watch?v=8aGhZQkoFbQ
 
 
 
