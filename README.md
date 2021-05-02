@@ -10,7 +10,7 @@ Personal learning notes, I want to update my basic js knowledge :)
 
 - 11.04.2021 🍅 🍅 🍅
 - 12.04.2021 🍅
-- 02.05.2021 🍅 🍅 🍅
+- 02.05.2021 🍅 🍅 🍅 🍅
 
 # Notes
 
@@ -68,6 +68,8 @@ https://dev.to/baransel/how-to-add-an-event-listener-to-multiple-elements-in-jav
 
 ### document.querySelector (first) vs. document.querySelectorAll
 
+- document.querySelector => first element, null
+- document.querySelectorAll => array, .length == 0
 
 ### Modify elements / classes / styles
 
@@ -105,13 +107,64 @@ element.classList.add("panel-danger");
 ```javascript
 element.classList.toggle("hide");
 ```
-
-
  
 ### Finding parent element - closest()
 
 https://gomakethings.com/how-to-get-a-parent-element-with-vanilla-js/
 
+
+### Adding/Removing
+
+```javascript
+let imgEl = document.createElement("img");
+imgEl.src = "test.svg";
+element.appendChild(imgEl);
+```
+
+## Arrays
+
+```javascript
+    let persons = ['Max','Mia'];
+    persons.push("Paula");
+    let justAnotherStudent = "Mira";
+    // add at end of array:
+    persons.push(justAnotherStudent);
+    // length
+    console.log("persons.length =",persons.length);
+    console.log("First person",persons[0]);
+    // add at beginning
+    persons.unshift("Erster");
+    console.log("Persons after unshift:",persons.toString());
+    // remove last el
+    let removedPerson =  persons.pop();
+    console.log("Persons after pop()",persons.toString(),"// removed person:",removedPerson);
+    // remove first el
+    persons.shift();
+    console.log("Persons after shift()",persons.toString());
+```
+
+```javascript
+    for (let person of persons){
+        console.log('Person: ',person);
+    }
+```
+
+Multidimensional:
+
+```javascript
+    let personsMultiDimensional = [
+        ['Max','Mira'],
+        ['Tom','Tina']
+    ];
+    console.log(personsMultiDimensional[1][1]);
+
+    for(let personGroup of personsMultiDimensional){
+        console.log('Group:',personGroup);
+        for(let person of personGroup){
+            console.log('Person: ',person);
+        }
+    }
+```
 
 
 
@@ -121,7 +174,7 @@ https://gomakethings.com/how-to-get-a-parent-element-with-vanilla-js/
 - ❓ Or use breakpoints in chrome dev tools?
 
 
-## Easiest experience for devs?
+## Off-Topic Easiest experience for devs?
 
 - Gulp/Grunt - hard to understand sometimes? PRO: package.json install possible, just run "npm install" and "grunt dev"
     - PRO: if setup correctly, you can also use it in Bitbucket/Github/Gitlab pipeline

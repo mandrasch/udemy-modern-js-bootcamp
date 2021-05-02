@@ -33,4 +33,42 @@ window.addEventListener("load", function () {
     } else {
         console.error('No box heading elements found.',headings);
     }
+
+    // Arrays
+
+    let persons = ['Max','Mia'];
+    persons.push("Paula");
+    let justAnotherStudent = "Mira";
+    // add at end of array:
+    persons.push(justAnotherStudent);
+    // length
+    console.log("persons.length =",persons.length);
+    console.log("First person",persons[0]);
+    // add at beginning
+    persons.unshift("Erster");
+    console.log("Persons after unshift:",persons.toString());
+    // remove last el
+    let removedPerson =  persons.pop();
+    console.log("Persons after pop()",persons.toString(),"// removed person:",removedPerson);
+    // remove first el
+    persons.shift();
+    console.log("Persons after shift()",persons.toString());
+
+    for (let person of persons){
+        console.log('Person: ',person);
+    }
+
+    let personsMultiDimensional = [
+        ['Max','Mira'],
+        ['Tom','Tina']
+    ];
+    console.log(personsMultiDimensional[1][1]);
+
+    for(let personGroup of personsMultiDimensional){
+        console.log('Group:',personGroup);
+        for(let person of personGroup){
+            console.log('Person: ',person);
+        }
+    }
+
 }, false);
