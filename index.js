@@ -6,7 +6,6 @@
 // alert(a);
 
 // show/hide panels/box
-
 window.addEventListener("load", function () {
     let headings = document.querySelectorAll(".box__heading"); // array
     if (headings.length > 0) {
