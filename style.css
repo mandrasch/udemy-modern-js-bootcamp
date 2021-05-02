@@ -1,0 +1,41 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Arial";
+}
+
+.box {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.box__heading {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.box__content {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box__indicator {
+    float: right;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.box__indicator svg {
+    width: auto;
+    height: 100%;
+}
+
+.box.hide .box__content {
+    display: none;
+}
+
+.box.hide .box__indicator {
+    transform: rotate(180deg);
+}

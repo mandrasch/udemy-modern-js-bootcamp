@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titel der Seite | Name der Website</title>
-  </head>
-  <body>
-    <!-- Sichtbarer Dokumentinhalt im body -->
-    <p>Sehen Sie sich den Quellcode dieser Seite an.
-      <kbd>(Kontextmenu: Seitenquelltext anzeigen)</kbd></p>
 
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="inlineSVG" style="display:none" ;>
+
+    <svg id="collapseIcon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <polygon style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" points="379.076 265.156" />
+      <polygon style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" points="228.03199768066406 83.4469985961914" />
+      <polygon style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"
+        points="91.2 82.238 411.192 258.207 90.735 436.55" />
+    </svg>
+
+  </div>
+
+  <!-- Sichtbarer Dokumentinhalt im body -->
+  <p>Sehen Sie sich den Quellcode dieser Seite an.
+    <kbd>(Kontextmenu: Seitenquelltext anzeigen)</kbd></p>
+
+  <h2>Ausklappbare Boxen</h2>
+  <div class="box">
+    <h3 class="box__heading">
+      Das hier ist die Überschrift 1
+      <span class="box__indicator"><svg class="collapseIcon" viewBox="0 0 100 100">
+          <use xlink:href="#collapseIcon"></use>
+        </svg></span>
+    </h3>
+    <div class="box__content">
+      Und das hier, ist der Inhalt 
+    </div>
+  </div>
+  <div class="box">
+    <h3 class="box__heading">
+      Das hier ist die Überschrift 2 <span class="box__indicator"><svg class="collapseIcon" viewBox="0 0 100 100">
+        <use xlink:href="#collapseIcon"></use>
+      </svg></span>
+    </h3>
+    <div class="box__content">
+      Und das hier, ist der Inhalt
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
