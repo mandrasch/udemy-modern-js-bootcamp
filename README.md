@@ -4,6 +4,8 @@ Personal learning notes, I want to update my basic js knowledge :)
 
 "Modernes JavaScript (ES6): jQuery, node.js, und viel Praxis!" - Hosted by Jannis Seemann https://www.udemy.com/course/javascript-bootcamp/
 
+*(If you want to take an english course, see for example https://www.udemy.com/course/javascript-beginners-complete-tutorial/, thanks for suggestion [@kino_auge](https://twitter.com/kino_auge/status/1381891206351880192))*
+
 # Pomodoros
 
 - 11.04.2021 🍅 🍅 🍅
